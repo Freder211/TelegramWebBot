@@ -1,3 +1,5 @@
+from selenium import webdriver
+
 browser = webdriver.Firefox() #crea il browser virtuale
 browser.implicitly_wait(5) #aspetta ogni volta 5 secondi per il browser che carichi
 browser.get('https://web.telegram.org/') #va sul link assegnato
