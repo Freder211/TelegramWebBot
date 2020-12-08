@@ -1,4 +1,4 @@
 print("hello")
 print ("gg per ci")
-def calcolaProdotto (int a, int b):
+def calcolaProdotto (a, b):
     return a * b
