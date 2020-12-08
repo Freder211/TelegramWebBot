@@ -1,13 +1,3 @@
-print("hello")
-print ("gg per ci")
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 55edf83b08a45029157071c120ea0956af80ae52
-def calcolaProdotto (a, b):
-    return a * b
-
 browser = webdriver.Firefox() #crea il browser virtuale
 browser.implicitly_wait(5) #aspetta ogni volta 5 secondi per il browser che carichi
 browser.get('https://web.whatsapp.com/') #va sul link assegnato
