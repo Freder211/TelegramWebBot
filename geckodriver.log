@@ -174,3 +174,134 @@ JavaScript warning: https://web.telegram.org/js/app.js, line 20: asm.js type err
 JavaScript warning: https://web.telegram.org/js/app.js, line 31: asm.js type error: numeric literal out of representable integer range
 JavaScript warning: https://web.telegram.org/js/app.js, line 36: asm.js type error: fixnum is not a subtype of double? or floatish
 JavaScript warning: https://web.telegram.org/js/app.js, line 53: asm.js type error: double is not a subtype of int
+1607554930556	geckodriver	INFO	Listening on 127.0.0.1:53178
+1607554933667	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\aless\\AppData\\Local\\Temp\\rust_mozprofileop9s6I"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607554937837	Marionette	INFO	Listening on port 53188
+1607554937927	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.telegram.org/js/app.js, line 20: asm.js type error: duplicate name 'n' not allowed
+JavaScript warning: https://web.telegram.org/js/app.js, line 31: asm.js type error: numeric literal out of representable integer range
+JavaScript warning: https://web.telegram.org/js/app.js, line 36: asm.js type error: fixnum is not a subtype of double? or floatish
+JavaScript warning: https://web.telegram.org/js/app.js, line 53: asm.js type error: double is not a subtype of int
+1607554951994	Marionette	INFO	Stopped listening on port 53188
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1607554953454	geckodriver	INFO	Listening on 127.0.0.1:53250
+1607554956546	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\aless\\AppData\\Local\\Temp\\rust_mozprofileC7grns"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607554961033	Marionette	INFO	Listening on port 53259
+1607554961415	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.telegram.org/js/app.js, line 20: asm.js type error: duplicate name 'n' not allowed
+JavaScript warning: https://web.telegram.org/js/app.js, line 31: asm.js type error: numeric literal out of representable integer range
+JavaScript warning: https://web.telegram.org/js/app.js, line 36: asm.js type error: fixnum is not a subtype of double? or floatish
+JavaScript warning: https://web.telegram.org/js/app.js, line 53: asm.js type error: double is not a subtype of int
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:405:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2252))
+JavaScript error: resource://devtools/client/inspector/markup/views/element-editor.js, line 508: TypeError: this.node.walkerFront is null
+JavaScript error: resource://devtools/client/inspector/markup/views/element-editor.js, line 508: TypeError: this.node.walkerFront is null
+JavaScript error: resource://devtools/client/inspector/markup/views/element-editor.js, line 508: TypeError: this.node.walkerFront is null
+JavaScript error: resource://devtools/client/inspector/markup/views/element-editor.js, line 508: TypeError: this.node.walkerFront is null
+JavaScript error: resource://devtools/client/inspector/markup/views/element-editor.js, line 508: TypeError: this.node.walkerFront is null
+JavaScript error: resource://devtools/client/inspector/markup/views/element-editor.js, line 508: TypeError: this.node.walkerFront is null
+JavaScript error: resource://devtools/client/inspector/markup/views/element-editor.js, line 508: TypeError: this.node.walkerFront is null
+JavaScript error: resource://devtools/client/inspector/markup/views/element-editor.js, line 508: TypeError: this.node.walkerFront is null
+JavaScript error: resource://devtools/client/inspector/markup/views/element-editor.js, line 508: TypeError: this.node.walkerFront is null
+JavaScript error: resource://devtools/client/inspector/markup/views/element-editor.js, line 508: TypeError: this.node.walkerFront is null
+JavaScript error: resource://devtools/client/inspector/markup/views/element-editor.js, line 508: TypeError: this.node.walkerFront is null
+1607554992107	Marionette	INFO	Stopped listening on port 53259
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1607555115750	geckodriver	INFO	Listening on 127.0.0.1:53376
+1607555118839	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\aless\\AppData\\Local\\Temp\\rust_mozprofileTNazK7"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607555122214	Marionette	INFO	Listening on port 53384
+1607555122561	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.telegram.org/js/app.js, line 20: asm.js type error: duplicate name 'n' not allowed
+JavaScript warning: https://web.telegram.org/js/app.js, line 31: asm.js type error: numeric literal out of representable integer range
+JavaScript warning: https://web.telegram.org/js/app.js, line 36: asm.js type error: fixnum is not a subtype of double? or floatish
+JavaScript warning: https://web.telegram.org/js/app.js, line 53: asm.js type error: double is not a subtype of int
+1607555137662	Marionette	INFO	Stopped listening on port 53384
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1607555141664	geckodriver	INFO	Listening on 127.0.0.1:53443
+1607555144750	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\aless\\AppData\\Local\\Temp\\rust_mozprofileTGse1K"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607555149685	Marionette	INFO	Listening on port 53451
+1607555150140	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.telegram.org/js/app.js, line 20: asm.js type error: duplicate name 'n' not allowed
+JavaScript warning: https://web.telegram.org/js/app.js, line 31: asm.js type error: numeric literal out of representable integer range
+JavaScript warning: https://web.telegram.org/js/app.js, line 36: asm.js type error: fixnum is not a subtype of double? or floatish
+JavaScript warning: https://web.telegram.org/js/app.js, line 53: asm.js type error: double is not a subtype of int
+1607555203603	Marionette	INFO	Stopped listening on port 53451
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1607564872623	geckodriver	INFO	Listening on 127.0.0.1:53749
+1607564875758	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\aless\\AppData\\Local\\Temp\\rust_mozprofileNdcQnD"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607564878300	Marionette	INFO	Listening on port 53757
+1607564878453	Marionette	WARN	TLS certificate errors will be ignored for this session
+1607564888100	Marionette	INFO	Stopped listening on port 53757
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Temp\\rust_mozprofile1IgmSG"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+Can't find symbol 'eglSetDamageRegionKHR'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1607564889914	Marionette	INFO	Listening on port 53801
+1607564890399	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.telegram.org/js/app.js, line 20: asm.js type error: duplicate name 'n' not allowed
+JavaScript warning: https://web.telegram.org/js/app.js, line 31: asm.js type error: numeric literal out of representable integer range
+JavaScript warning: https://web.telegram.org/js/app.js, line 36: asm.js type error: fixnum is not a subtype of double? or floatish
+JavaScript warning: https://web.telegram.org/js/app.js, line 53: asm.js type error: double is not a subtype of int
+JavaScript warning: https://web.telegram.org/js/app.js, line 20: asm.js type error: duplicate name 'n' not allowed
+JavaScript warning: https://web.telegram.org/js/app.js, line 31: asm.js type error: numeric literal out of representable integer range
+JavaScript warning: https://web.telegram.org/js/app.js, line 36: asm.js type error: fixnum is not a subtype of double? or floatish
+JavaScript warning: https://web.telegram.org/js/app.js, line 53: asm.js type error: double is not a subtype of int
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1607566388888	Marionette	INFO	Stopped listening on port 53801
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
