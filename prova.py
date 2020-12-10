@@ -8,7 +8,7 @@ if browser.current_url=="https://web.telegram.org/#/login":
     tel = "3347799058"
     path_telefono = "//*[@id=\"ng-app\"]/body/div[1]/div/div[2]/div[2]/form/div[2]/div[2]/input"
     input_tel=browser.find_element_by_xpath(path_telefono)
-    input_tel.click
+    input_tel.clear
     input_tel.send_keys(tel)
 
     path_avanti = "/html/body/div[1]/div/div[2]/div[1]/div/a"
