@@ -1,16 +1,21 @@
-from selenium import webdriver
 import configparser
 import json
+import asyncio
 
 from telethon import TelegramClient
 from telethon.errors import SessionPasswordNeededError
+from telethon.tl.functions.channels import GetParticipantsRequest
+from telethon.tl.types import ChannelParticipantsSearch
+from telethon.tl.types import (
+    PeerChannel
+)
 
-# Reading Configs (these parameters are saved in a different file for a security matter).
+# Reading Configs
 config = configparser.ConfigParser()
 config.read("config.ini")
 
-# Setting configuration values 
-api_id = config['Telegram']['api_id'] # It reads the values from config.ini by the 'Telegram' class.
+# Setting configuration values
+api_id = config['Telegram']['api_id']
 api_hash = config['Telegram']['api_hash']
 
 api_hash = str(api_hash)
@@ -18,18 +23,60 @@ api_hash = str(api_hash)
 phone = config['Telegram']['phone']
 username = config['Telegram']['username']
 
-
 # Create the client and connect
-client = TelegramClient(username, api_id, api_hash) # It defines a new client with the username and the two unique codes.
-client.start()
-print("Client Created")
-# Ensure you're authorized
-if not client.is_user_authorized():
-    client.send_code_request(phone) # If the user is not signed, a code request is sent to the phone.
-    try:
-        client.sign_in(phone, input('Enter the code: '))
-    except SessionPasswordNeededError:
-        client.sign_in(password = input('Password: ')) # If Telegram needs the password, it throws the exception.
+client = TelegramClient(username, api_id, api_hash)
+
+async def main(phone):
+    await client.start()
+    print("Client Created")
+    # Ensure you're authorized
+    if await client.is_user_authorized() == False:
+        await client.send_code_request(phone)
+        try:
+            await client.sign_in(phone, input('Enter the code: '))
+        except SessionPasswordNeededError:
+            await client.sign_in(password=input('Password: '))
+
+    me = await client.get_me()
+
+    user_input_channel = input("Enter channel URL or ID: ")
+
+    if user_input_channel.isdigit():
+        entity = PeerChannel(int(user_input_channel))
+    else:
+        entity = user_input_channel
+
+    CIAORAGA_by_Michele_Molteni = await client.get_entity(entity)
+
+    offset = 0
+    limit = 100
+    all_participants = []
+
+    while True:
+        participants = await client(GetParticipantsRequest(
+            CIAORAGA_by_Michele_Molteni, ChannelParticipantsSearch(''), offset, limit,
+            hash=0
+        ))
+        if not participants.users:
+            break
+        all_participants.extend(participants.users)
+        offset += len(participants.users)
+
+    all_user_details = []
+    for participant in all_participants:
+        all_user_details.append(
+            {"id": participant.id, "first_name": participant.first_name, "last_name": participant.last_name,
+             "user": participant.username, "phone": participant.phone, "is_bot": participant.bot})
+
+    with open('data.json', 'w') as outfile:
+        json.dump(all_user_details, outfile)
+
+with client:
+    client.loop.run_until_complete(main(phone))
+    
+    
+
+
 
 """ browser = webdriver.Firefox() #crea il browser virtuale
 browser.implicitly_wait(5) #aspetta ogni volta 5 secondi per il browser che carichi
